@@ -1,0 +1,27 @@
+<h1>Wpisy do księgi gości</h1>
+
+<table>
+  <tr>
+    <th>Imie</th>
+    <th>Nazwisko</th>
+    <th>Kraj</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.imie %></td>
+    <td><%= post.nazwisko %></td>
+    <td><%= post.kraj %></td>
+    <td><%= link_to 'Pokaż', post %></td>
+    <td><%= link_to 'Edytuj', edit_post_path(post) %></td>
+    <td><%= link_to 'Usuń', post, method: :delete, data: { confirm: 'Usunąć wpis?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nowy wpis', new_post_path %>
