@@ -1,0 +1,31 @@
+<h1>Listing posts</h1>
+
+<table>
+  <tr>
+    <th>Imie</th>
+    <th>Nazwisko</th>
+    <th>Kraj</th>
+    <th>Wpis</th>
+    <th>Podpis</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.imie %></td>
+    <td><%= post.nazwisko %></td>
+    <td><%= post.kraj %></td>
+    <td><%= post.wpis %></td>
+    <td><%= post.podpis %></td>
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post', new_post_path %>
