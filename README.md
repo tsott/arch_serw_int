@@ -1,3 +1,5 @@
+Aplikacja dziala juz na heroku
+
 Link do tutoriala, według którego zrobiłem logowanie się do aplikacji przez facebooka:
 http://net.tutsplus.com/tutorials/ruby/how-to-use-omniauth-to-authenticate-your-users/
 
