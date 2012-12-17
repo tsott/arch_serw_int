@@ -1,4 +1,5 @@
-Aplikacja dziala juz na heroku
+Aplikacja dziala juz na heroku: 
+http://ksiega-pamiatkowa.herrokuapp.com
 
 Link do tutoriala, według którego zrobiłem logowanie się do aplikacji przez facebooka:
 http://net.tutsplus.com/tutorials/ruby/how-to-use-omniauth-to-authenticate-your-users/
